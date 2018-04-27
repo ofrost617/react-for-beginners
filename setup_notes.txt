@@ -6,7 +6,7 @@
 
 (3. Use npm install -g create-react-app (to bundle our Js for us and start a server) 
 
-4. Use create-react-app hello-world (or app name) to create react app- may not need these? in this example?)
+4. Use create-react-app hello-world (or app name) to create react app-)
 
 
 
