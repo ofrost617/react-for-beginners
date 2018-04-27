@@ -20,7 +20,6 @@ const Header = (props) => {
 
 export default Header; 
 
-
 // As our component was before:
 // class Header extends React.Component{
 //   render() {
