@@ -25,3 +25,18 @@ With JSX you can only ever return one parent element per component with other el
 
 JSX has specific commenting syntax
 If you put a JSX comment under return and above your html, it wont work, either put them above or within the element you want to return.
+
+Making the App layout: 
+made of header, order, menu etc components. This will initially throw an error when the components are added to App.ja as they haven't been created yet.
+
+step by step of creating a component:
+1. Create component.js file
+2. import react to that file
+3. write component
+4. export component at the bottom
+5. import component to App.js
+
+
+
+
+Passing props- we want to get data rom one component to another component- this data is supplied using props- like attribtue tags in html.

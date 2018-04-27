@@ -7,12 +7,16 @@ import { render } from 'react-dom';
 // We jsut need the rener method rather than the whole react dom
 import './css/style.css';
 // Webpack will import style.css and put a css tag on the page for us
+import App from './components/App';
 
 import StorePicker from './components/StorePicker';
-// Without a rel path, noe thinks this should be located in node_modules
+// Without a rel path, node thinks this should be located in node_modules
+import Header from './components/Header';
 
 
 
-render(<StorePicker/>, document.querySelector('#main'));
+
+// render(<StorePicker/>, document.querySelector('#main'));
 // we use render to name the tag as StorePicker to render this component, and we want to add it to the DOM element wiht the id of 'main'
-// (We could also use document.getElementById instead of querySelector) 
+// (We could also use document.getElementById instead of querySelector)
+render(<App/>, document.querySelector('#main')); 
