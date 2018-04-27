@@ -40,3 +40,13 @@ step by step of creating a component:
 
 
 Passing props- we want to get data rom one component to another component- this data is supplied using props- like attribtue tags in html.
+
+Dynamically changing html:
+take a child component (Header.js) and a parent component (App.js)
+In the child component, add a tag with a className="x" with content to be changed between the opening and closing tag (eg. {this.props.tagline}
+Then in the parent component, add a <Header /> tag but this time add <Header x="y">
+{this.props.tagline} will now be replaced with y
+In this instance the prop being added to Header.js is x and its value goes from whatever it was previously, to y.
+{this.props.whatever} can be used anywhere inside the render method.
+
+typing $r in the console in react mode after selecting a component allows you to access and play with the object in question.

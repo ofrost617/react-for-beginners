@@ -9,13 +9,13 @@ class App extends React.Component {
       <div className="catch-of-the-day">
         <div className="menu">
           {/* We then create a Header component and add it in- this is different from a header hmtl tag */}
-          <Header />
+          <Header tagline="Fresh Seafood Market" />
         </div>
         <Order/>
         <Inventory/>
       </div>
     )
-  }
+  } 
 }
 
-export default App;
+export default App; 
