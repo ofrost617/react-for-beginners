@@ -1,0 +1,14 @@
+Everything in React is called a component.
+
+A component is a reusable piece of a website. React allows you to create your own components/tags
+
+Anywhere that state is changed in a React component, it changes/updates everywhere that data appears on the page.
+
+static/js/bundle.js when server is started and page loads is a link to a react file. Any code written in react.js will be bundled into bundle.js
+
+Every react component needs at least 1 method- the render() method.
+
+When we want our react component to show, we go into out index.html and into the mounting component- here it's the div id-main.
+We have to import reactDOM in index.js in order to be able to render our component.
+
+Best practice to put each component in separate files.

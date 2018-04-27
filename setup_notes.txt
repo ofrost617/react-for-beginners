@@ -1,0 +1,23 @@
+1. Install node
+
+2. Set up file structure
+
+
+
+(3. Use npm install -g create-react-app (to bundle our Js for us and start a server) 
+
+4. Use create-react-app hello-world (or app name) to create react app)
+
+
+
+
+3. Run npm install to install dependencies in src
+
+4. Build StorePicker component
+    1. Load in react into index.js as an ES6 module
+    2. Create store picker component
+    3. Render it at the bottom of component
+
+5. Create StorePicker.js file in components folder and move storePicker code from index.js
+    1. In order for this to now continue to work, we need to import react into the StorePicker.js module
+    2. then we need to export it at the bottom of the module so that we can import it into index.js using a rel path 
