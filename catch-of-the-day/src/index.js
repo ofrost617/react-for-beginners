@@ -5,8 +5,12 @@ import React from 'react';
 // Loads everything form the react library into the react variable. Finds it from package.json
 import { render } from 'react-dom';
 // We jsut need the rener method rather than the whole react dom
+import './css/style.css';
+// Webpack will import style.css and put a css tag on the page for us
+
 import StorePicker from './components/StorePicker';
 // Without a rel path, noe thinks this should be located in node_modules
+
 
 
 render(<StorePicker/>, document.querySelector('#main'));

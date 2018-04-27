@@ -23,3 +23,5 @@
     2. then we need to export it at the bottom of the module so that we can import it into index.js using a rel path 
 
 6. Enable Emmet for autocomplete html tags
+
+7. Loading CSS into react
