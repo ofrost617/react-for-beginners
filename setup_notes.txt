@@ -21,3 +21,5 @@
 5. Create StorePicker.js file in components folder and move storePicker code from index.js
     1. In order for this to now continue to work, we need to import react into the StorePicker.js module
     2. then we need to export it at the bottom of the module so that we can import it into index.js using a rel path 
+
+6. Enable Emmet for autocomplete html tags

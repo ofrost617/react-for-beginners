@@ -11,4 +11,17 @@ Every react component needs at least 1 method- the render() method.
 When we want our react component to show, we go into out index.html and into the mounting component- here it's the div id-main.
 We have to import reactDOM in index.js in order to be able to render our component.
 
-Best practice to put each component in separate files.
+Best practice to put each component in separate files.]
+
+Jsx allows us to write html inside our JS
+    return <p>Hello</p>;
+// the above line is JSX syntax
+
+We need to give our form (StorePicker.js ln 6) a name, but because the word 'class' is reserved for something else in JS/React, we can't use this to mean
+the normal 'class' we'd use in html. Instead it is replaced with 'className'
+NB- because we have Emmett enabled, simply typing form.store-selector will autocomplete the form tag with className="store-selector"
+
+With JSX you can only ever return one parent element per component with other elements inside it (or wrapit in a div)
+
+JSX has specific commenting syntax
+If you put a JSX comment under return and above your html, it wont work, either put them above or within the element you want to return.
