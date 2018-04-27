@@ -50,3 +50,8 @@ In this instance the prop being added to Header.js is x and its value goes from 
 {this.props.whatever} can be used anywhere inside the render method.
 
 typing $r in the console in react mode after selecting a component allows you to access and play with the object in question.
+
+Prop types allow you to verfy that data is passed and that data that is passed is the expected type.
+
+Some components are veyr simple in that they only render out something to the DOM, in this case you just need a stateless functional component- so for 
+when you don't need any methods other than render() we can use a stateless funcitonal componnent.
