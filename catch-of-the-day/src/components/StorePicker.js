@@ -16,7 +16,7 @@ class StorePicker extends React.Component {
     console.log("You changed the URL");
     // first grab the text from the box
     console.log(this.storeInput.value)
-    // transition from / to /store.:storeId
+    // transition the URL from / to /store.:storeId
   }
 // render methods are bound to the component but other methods aren't eg the one above. This mand we cna use this within render 
   render() {

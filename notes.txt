@@ -66,7 +66,7 @@ given component using eg. {App}.
 Remember to require NotFound from ./components/NotFound.js in order to create a NotFound route.
 
 
-Events in React
+Events in React- StorePicker.js
 Are the same as events in JS
 they are wrapped in SyntheticEvent to make sure they work cross Browser
 Events are done in line
@@ -74,4 +74,29 @@ First event:
   on click take store name from form
   Then
   add this string to the end of the URl
-  
+We attach the event inline on the form using onSubmit. We use this instead of onClick to account for someone pressing the enter key
+we create our own methos that repsonds to onSubmit (we create this above render)
+{this.goToStore}: render methods are bound to the class that you are in. All other methods are not bound to actual component (like goToStore)
+so we must add a way to bind that to the component later.
+This in a render method can be used inside a component and will always equal the actual component.
+Submitting a form will always take all of the data within it and call some kind of action on it or it will refresh the page unless we use preventDefault.
+Grabbing the text from the box:
+In react you want to stay away from toucing the DOM as much as possible, because we modufy the data and render our the JSX using react and are hands off the DOM.
+So in order to get data out of an input, we use a ref to reference the input.
+rather than using ref="storeInput" react is phasing out string refs in favour of function refs
+instead we use ref={()} with an arrow function: ref={(input) => {this.storeInput = input}}
+This states that when the referred to input is rendered onto the page it's going to put a refeence to theinput on the class itself.
+This can be seen using react dev tools to select component then in console using $r.storeInput to reference the element in the DOM
+Then in goToStore, we want to log this.storeInput to see if we can access it when we click it, but it can't read storeInput of 'this' in this case 
+because it is null.
+But we can reference the StorePicker component inside another method inside goToStore
+Using class extends to create an ES6 class, doesn't implicitly bind all of the methods on the component to the actual component itself.
+We could do this by the way in the notes at the top of StorePicker (using a constructor):
+
+using super we run our react component first then sprinkles on our extra stuff (this is best used when there are multiple instances of calling
+the same method on a page)
+or
+can be done through onSubmit={this.goToStore.bind(this)} which binds the goToStore method to this (referring to the component)
+
+Next: How do we use react router to change from / to /store/...
+
