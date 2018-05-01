@@ -64,3 +64,14 @@ Import BrowserRouter and Route and Switch from react-router-dom and create a Roo
 Then within the switch tag use Route tags to create the routes (/...) that they should lead to and render a 
 given component using eg. {App}.
 Remember to require NotFound from ./components/NotFound.js in order to create a NotFound route.
+
+
+Events in React
+Are the same as events in JS
+they are wrapped in SyntheticEvent to make sure they work cross Browser
+Events are done in line
+First event:
+  on click take store name from form
+  Then
+  add this string to the end of the URl
+  
